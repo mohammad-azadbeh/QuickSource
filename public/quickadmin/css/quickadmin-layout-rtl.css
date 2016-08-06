@@ -1458,6 +1458,7 @@ Page sidebar
         float: right;
         position: relative;
         margin-left: -100%;
+        margin-right: 0px;
     }
 
     .page-full-width .page-sidebar {
@@ -2617,6 +2618,7 @@ Page content
 
     .page-content-wrapper .page-content {
         margin-right: 235px;
+        margin-left: 0px;
         margin-top: 0px;
         min-height: 600px;
         padding: 25px 20px 10px 20px;

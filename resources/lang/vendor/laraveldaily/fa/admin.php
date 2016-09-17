@@ -9,25 +9,25 @@ return [
     'partials-header-title'                 => 'مدیریت محتوا',
 
     // partials-sidebar
-    'partials-sidebar-menu'                 => 'Menu',
-    'partials-sidebar-users'                => 'Users',
-    'partials-sidebar-roles'                => 'Roles',
-    'partials-sidebar-user-actions'         => 'User actions',
-    'partials-sidebar-logout'               => 'Logout',
+    'partials-sidebar-menu'                 => 'منو',
+    'partials-sidebar-users'                => 'کاربران',
+    'partials-sidebar-roles'                => 'نقش ها',
+    'partials-sidebar-user-actions'         => 'اقدامات کاربران',
+    'partials-sidebar-logout'               => 'خروج از سیستم',
 
     // partials-topbar
-    'partials-topbar-title'                 => 'QuickAdmin en',
+    'partials-topbar-title'                 => 'پنل مدیریت محتوا',
 
     // users-create
-    'users-create-create_user'              => 'Create user',
-    'users-create-name'                     => 'Name',
-    'users-create-name_placeholder'         => 'Name',
-    'users-create-email'                    => 'Email',
-    'users-create-email_placeholder'        => 'Email',
-    'users-create-password'                 => 'Password',
-    'users-create-password_placeholder'     => 'Password',
-    'users-create-role'                     => 'Role',
-    'users-create-btncreate'                => 'Create',
+    'users-create-create_user'              => 'ایجاد کاربر',
+    'users-create-name'                     => 'نام',
+    'users-create-name_placeholder'         => 'نام کاربر را وارد کنید...',
+    'users-create-email'                    => 'پست الکترونیک',
+    'users-create-email_placeholder'        => 'پست الکترونیک را وارد کنید...',
+    'users-create-password'                 => 'رمز عبور',
+    'users-create-password_placeholder'     => 'رمز عبور را وارد کنید...',
+    'users-create-role'                     => 'نقش کاربر',
+    'users-create-btncreate'                => 'ایجاد',
 
     // users-edit
     'users-edit-edit_user'                  => 'Edit user',
@@ -41,13 +41,14 @@ return [
     'users-edit-btnupdate'                  => 'Update',
 
     // users-index
-    'users-index-add_new'                   => 'Add new',
-    'users-index-users_list'                => 'Users list',
-    'users-index-name'                      => 'Name',
-    'users-index-edit'                      => 'Edit',
-    'users-index-delete'                    => 'Delete',
-    'users-index-are_you_sure'              => 'Are you sure?',
-    'users-index-no_entries_found'          => 'No entries found',
+    'users-index-page-title'                   => 'مدیریت کاربران',
+    'users-index-add_new'                   => 'کاربر جدید',
+    'users-index-users_list'                => 'کاربران موجود',
+    'users-index-name'                      => 'نام کاربر',
+    'users-index-edit'                      => 'ویرایش',
+    'users-index-delete'                    => 'حذف',
+    'users-index-are_you_sure'              => 'آیا از حذف کاربر مطمئن هستید؟',
+    'users-index-no_entries_found'          => 'هیچ کاربری وجود ندارد.',
 
     // users-controller
     'users-controller-successfully_created' => 'User was successfully created!',

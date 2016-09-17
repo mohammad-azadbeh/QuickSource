@@ -1,5 +1,9 @@
 @extends('admin.layouts.master')
 
+@section('pageTitle')
+    {{trans('quickadmin::admin.users-index-page-title')}}
+@endsection
+
 @section('content')
 
     <p>{!! link_to_route('users.create', trans('quickadmin::admin.users-index-add_new'), [], ['class' => 'btn btn-success']) !!}</p>

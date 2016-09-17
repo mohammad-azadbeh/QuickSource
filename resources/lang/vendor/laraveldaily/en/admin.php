@@ -41,6 +41,7 @@ return [
     'users-edit-btnupdate'                  => 'Update',
 
     // users-index
+    'users-index-page-title'                   => 'Users',
     'users-index-add_new'                   => 'Add new',
     'users-index-users_list'                => 'Users list',
     'users-index-name'                      => 'Name',

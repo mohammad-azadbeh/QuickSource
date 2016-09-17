@@ -6,22 +6,22 @@ return [
   'some_problems_with_input' => 'there are some problems with input!',
 
   // auth-login
-  'login-login' => 'Login',
-  'login-email' => 'Email',
-  'login-password' => 'Password',
-  'login-remember_me' => 'Remember Me',
-  'login-btnlogin' => 'Log In',
+  'login-login' => 'ورود به سیستم',
+  'login-email' => 'پست الکترونیکی',
+  'login-password' => 'رمز عبور',
+  'login-remember_me' => 'مرا به خاطر بسپار',
+  'login-btnlogin' => 'وارد شدن',
 
   // auth-password
-  'password-reset_password' => 'Reset password',
-  'password-email' => 'Email',
-  'password-btnsend_password' => 'Send Password Reset Link',
+  'password-reset_password' => 'بازیابی رمز عبور',
+  'password-email' => 'پست الکترونیک',
+  'password-btnsend_password' => 'ارسال لینک تغییر رمز عبور',
 
   // auth-reset
-  'reset-reset_password' => 'Reset password',
-  'reset-email' => 'Email',
-  'reset-password' => 'Password',  
-  'reset-confirm_password' => 'Confirm password',  
-  'reset-btnreset_password' => 'Reset password',
+  'reset-reset_password' => 'بازیابی رمز عبور',
+  'reset-email' => 'پست الکترونیک',
+  'reset-password' => 'رمز عبور',
+  'reset-confirm_password' => 'تکرار رمز عبور',
+  'reset-btnreset_password' => 'تغییر پسورد',
 
 ];

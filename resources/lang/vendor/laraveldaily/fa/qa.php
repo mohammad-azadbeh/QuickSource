@@ -59,9 +59,9 @@ return [
 
 
   // menus-index
-  'menus-index-no_menu_items_found' => 'No menu items found',
-  'menus-index-new_crud' => 'Create new CRUD Controller',
-  'menus-index-new_custom' => 'Create new Custom Controller',
+  'menus-index-no_menu_items_found' => 'هیچ آیتمی پیدا نشد.',
+  'menus-index-new_crud' => 'ایجاد کنترلر CRUD جدید',
+  'menus-index-new_custom' => 'ایجاد کنترلر سفارشی جدید',
   'menus-index-new_parent' => 'Create new Parent Menu Item',
   'menus-index-positions_drag_drop' => 'You can change menu positions with drag-drop',
   'menus-index-click_save_positions' => 'Changes will be saved when you click Save positions',

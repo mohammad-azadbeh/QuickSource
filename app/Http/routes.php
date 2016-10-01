@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::group([
-    //'namespace'  => 'App\Http\Controllers\QuickAdmin',
+    //'namespace'  => 'Laraveldaily\Quickadmin\Controllers',
     'middleware' => ['web', 'auth']
 ], function () {
     // Dashboard home page route
@@ -78,10 +78,13 @@ Route::group([
             'as'   => 'actions.ajax',
             'uses' => 'QuickAdmin\UserActionsController@table'
         ]);
-
-
     });
+});
 
+Route::group([
+    //'namespace'  => 'App\Http\Controllers',
+    'middleware' => ['web']
+], function () {
     // Point to App\Http\Controllers\UsersController as a resource
     Route::group([
         'middleware' => 'role'
@@ -89,7 +92,6 @@ Route::group([
         Route::resource('users', 'UsersController');
         Route::resource('roles', 'RolesController');
     });
-
     // Authentication routes...
     Route::get('login', 'Auth\AuthController@getLogin');
     Route::post('login', 'Auth\AuthController@postLogin');

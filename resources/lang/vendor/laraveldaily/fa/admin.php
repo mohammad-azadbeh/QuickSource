@@ -81,5 +81,7 @@ return [
     'roles-controller-successfully_updated' => 'نقش با موفقیت ویرایش شد.',
     'roles-controller-successfully_deleted' => 'نقش با موفقیت حذف شد.',
 
+    //
+    'pleaseSelect' => 'لطفا انتخاب کنید...'
 ];
 

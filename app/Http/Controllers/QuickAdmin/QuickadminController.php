@@ -2,6 +2,7 @@
 namespace App\Http\Controllers\QuickAdmin;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Auth;
 
 class QuickadminController extends Controller
 {
@@ -12,6 +13,8 @@ class QuickadminController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard');
+        $user = Auth::user();
+
+        return view('admin.dashboard',compact('user'));
     }
 }

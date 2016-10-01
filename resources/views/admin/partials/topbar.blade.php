@@ -166,13 +166,13 @@
                         <ul class="dropdown-menu dropdown-menu-default">
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-user"></i> My Profile </a>
+                                    <i class="fa fa-user"></i> {{ trans('quickadmin::admin.my-profile') }}</a>
                             </li>
                             <li class="divider">
                             </li>
                             <li>
                                 <a href="#">
-                                    <i class="fa fa-lock"></i> Lock Screen </a>
+                                    <i class="fa fa-lock"></i> {{ trans('quickadmin::admin.lock-screen') }} </a>
                             </li>
                             <li>
                                 <a href="{{ url('logout') }}">

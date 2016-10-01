@@ -14,6 +14,8 @@ return [
     'partials-sidebar-roles'                => 'نقش ها',
     'partials-sidebar-user-actions'         => 'اقدامات کاربران',
     'partials-sidebar-logout'               => 'خروج از سیستم',
+    'my-profile'=>'ویرایش پروفایل',
+    'lock-screen'=>'قفل صفحه',
 
     // partials-topbar
     'partials-topbar-title'                 => 'پنل مدیریت محتوا',

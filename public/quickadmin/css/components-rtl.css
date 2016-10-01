@@ -1329,7 +1329,7 @@ li .icon-large[class^="fa-"], li .icon-large[class^="glyphicon-"], li .icon-larg
   box-shadow: 5px 5px rgba(102, 102, 102, 0.1);
   display: none;
   float: right;
-  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Tahoma;
   list-style: outside none none;
   margin: 10px 0 0;
   min-width: 175px;

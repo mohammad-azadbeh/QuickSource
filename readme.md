@@ -21,7 +21,7 @@ To use Quickadmin with Laravel Laravel 5.1.11 use branch `0.4.x`
  1. Database connection is required. Check your `.env` file.
  2. Create database.
 ```
-- Install the package via `composer require laraveldaily/quickadmin`.
+- Install the package via `composer require laraveldaily/quickadmin 1.*`.
 - Run `php artisan quickadmin:install` and fill the required information.
 - Run `php artisan key:generate`.
 - Run `php artisan migrate --path=database/dataFix`.

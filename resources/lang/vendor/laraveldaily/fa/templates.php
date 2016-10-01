@@ -2,24 +2,24 @@
 return [
 
   // templates-menu_field_line
-  'templates-menu_field_line-field_db_name' => 'Field DB name',
-  'templates-menu_field_line-size_limit' => 'File size limit (in MB)',
-  'templates-menu_field_line-size_limit_placeholder' => 'File size limit (in MB)',
-  'templates-menu_field_line-maximum_width' => 'File maximum width:',
-  'templates-menu_field_line-maximum_width_placeholder' => 'File maximum width',
-  'templates-menu_field_line-maximum_height' => 'File maximum height:',
-  'templates-menu_field_line-maximum_height_placeholder' => 'File maximum height',
-  'templates-menu_field_line-value' => 'Value',
-  'templates-menu_field_line-dont_use_ckeditor' => 'Don\'t use CKEDITOR',
-  'templates-menu_field_line-use_ckeditor' => 'Use CKEDITOR',
-  'templates-menu_field_line-select_relationship' => 'Select relationship',
-  'templates-menu_field_line-enum_values' => 'ENUM values: (comma separated)',
-  'templates-menu_field_line-enum_values_placeholder' => 'ENUM values (comma separated)',
-  'templates-menu_field_line-field_visual_title_placeholder' => 'Field visual title',
-  'templates-menu_field_line-comment_below_placeholder' => 'Optional additional comment below the field',
+  'templates-menu_field_line-field_db_name' => 'فیلد پایگاه داده',
+  'templates-menu_field_line-size_limit' => 'حجم فایل محدود (مگابایت)',
+  'templates-menu_field_line-size_limit_placeholder' => 'حجم فایل محدود (مگابایت) را وارد کنید...',
+  'templates-menu_field_line-maximum_width' => 'بیشترین طول فایل:',
+  'templates-menu_field_line-maximum_width_placeholder' => 'بیشترین طول فایل را وارد کنید...',
+  'templates-menu_field_line-maximum_height' => 'بیشترین عرض فایل:',
+  'templates-menu_field_line-maximum_height_placeholder' => 'بیشترین عرض فایل را وارد کنید...',
+  'templates-menu_field_line-value' => 'مقدار',
+  'templates-menu_field_line-dont_use_ckeditor' => 'ادیتور استفاده نشود',
+  'templates-menu_field_line-use_ckeditor' => 'استفاده از ادیتور',
+  'templates-menu_field_line-select_relationship' => 'اتخاب جدول رابطه',
+  'templates-menu_field_line-enum_values' => 'مقدار شمارشی: (جداسازی با کاما)',
+  'templates-menu_field_line-enum_values_placeholder' => 'مقدار ها را وارد کنید...',
+  'templates-menu_field_line-field_visual_title_placeholder' => 'عنوان نمایشی',
+  'templates-menu_field_line-comment_below_placeholder' => 'متن اختیاری که در تکست باس نمایش داده میشود.',
 
   // templates-customView_index
-  'templates-customView_index-list' => 'List',
+  'templates-customView_index-list' => 'لیست',
   'templates-customView_index-welcome_custom_view' => 'Welcome to your custom view',
 
   // templates-view_create

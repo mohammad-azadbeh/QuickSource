@@ -12,27 +12,14 @@
 */
 
 
-Route::group(
-    [
-        'prefix' => '/api/v1',
-        'namespace' => 'Api\V1',
-        //'as' => 'api.',
-        'middleware' => 'auth:api'
-    ],
-    function () {
-        Route::resource('users', 'UsersController@index');
-        Route::resource('users/get', 'UsersController@get');
-        Route::resource('users/getAl', 'UsersController@getAll');
-        Route::resource('users/create', 'UsersController@create');
-        Route::resource('users/update', 'UsersController@update');
-        Route::resource('users/delete', 'UsersController@delete');
-    });
-
 
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/home', 'HomeController@index');
 
+
+//Menu Route
 Route::group([
     //'namespace'  => 'Laraveldaily\Quickadmin\Controllers',
     'middleware' => ['web', 'auth']
@@ -99,6 +86,7 @@ Route::group([
     });
 });
 
+// Auth Route
 Route::group([
     //'namespace'  => 'App\Http\Controllers',
     'middleware' => ['web']
@@ -110,20 +98,36 @@ Route::group([
         Route::resource('users', 'UsersController');
         Route::resource('roles', 'RolesController');
     });
-    // Authentication routes...
-    Route::get('login', 'Auth\AuthController@getLogin');
-    Route::post('login', 'Auth\AuthController@postLogin');
-    Route::get('logout', 'Auth\AuthController@getLogout');
 
-    // Registration routes...
-    Route::get('register', 'Auth\AuthController@getRegister');
-    Route::post('register', 'Auth\AuthController@postRegister');
+    // Authentication Routes...
+    $this->get('login', 'Auth\AuthController@showLoginForm');
+    $this->post('login', 'Auth\AuthController@login');
+    $this->get('logout', 'Auth\AuthController@getLogout');
 
-    // Password reset link request routes...
-    Route::get('password/email', 'Auth\PasswordController@getEmail');
-    Route::post('password/email', 'Auth\PasswordController@postEmail');
+    // Registration Routes...
+    $this->get('register', 'Auth\AuthController@showRegistrationForm');
+    $this->post('register', 'Auth\AuthController@register');
 
-    // Password reset routes...
-    Route::get('password/reset/{token}', 'Auth\PasswordController@getReset');
-    Route::post('password/reset', 'Auth\PasswordController@postReset');
+    // Password Reset Routes...
+    $this->get('password/reset/{token?}', 'Auth\PasswordController@showResetForm');
+    $this->post('password/email', 'Auth\PasswordController@sendResetLinkEmail');
+    $this->post('password/reset', 'Auth\PasswordController@reset');
 });
+
+// Api Route
+Route::group(
+    [
+        'prefix' => '/api/v1',
+        'namespace' => 'Api\V1',
+        //'as' => 'api.',
+        'middleware' => 'auth:api'
+    ],
+    function () {
+            // User Route
+        Route::resource('users', 'UsersController@index');
+        Route::resource('users/get', 'UsersController@get');
+        Route::resource('users/getAl', 'UsersController@getAll');
+        Route::resource('users/create', 'UsersController@create');
+        Route::resource('users/update', 'UsersController@update');
+        Route::resource('users/delete', 'UsersController@delete');
+    });

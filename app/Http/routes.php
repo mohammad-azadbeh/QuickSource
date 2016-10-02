@@ -11,6 +11,24 @@
 |
 */
 
+
+Route::group(
+    [
+        'prefix' => '/api/v1',
+        'namespace' => 'Api\V1',
+        //'as' => 'api.',
+        //'middleware' => 'auth:api'
+    ],
+    function () {
+        Route::resource('users', 'UsersController@index');
+        Route::resource('users/get', 'UsersController@get');
+        Route::resource('users/getAl', 'UsersController@getAll');
+        Route::resource('users/create', 'UsersController@create');
+        Route::resource('users/update', 'UsersController@update');
+        Route::resource('users/delete', 'UsersController@delete');
+    });
+
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -26,56 +44,56 @@ Route::group([
     ], function () {
         // Menu routing
         Route::get(config('quickadmin.route') . '/menu', [
-            'as'   => 'menu',
+            'as' => 'menu',
             'uses' => 'QuickAdmin\QuickadminMenuController@index'
         ]);
         Route::post(config('quickadmin.route') . '/menu', [
-            'as'   => 'menu',
+            'as' => 'menu',
             'uses' => 'QuickAdmin\QuickadminMenuController@rearrange'
         ]);
 
         Route::get(config('quickadmin.route') . '/menu/edit/{id}', [
-            'as'   => 'menu.edit',
+            'as' => 'menu.edit',
             'uses' => 'QuickAdmin\QuickadminMenuController@edit'
         ]);
         Route::post(config('quickadmin.route') . '/menu/edit/{id}', [
-            'as'   => 'menu.edit',
+            'as' => 'menu.edit',
             'uses' => 'QuickAdmin\QuickadminMenuController@update'
         ]);
 
         Route::get(config('quickadmin.route') . '/menu/crud', [
-            'as'   => 'menu.crud',
+            'as' => 'menu.crud',
             'uses' => 'QuickAdmin\QuickadminMenuController@createCrud'
         ]);
         Route::post(config('quickadmin.route') . '/menu/crud', [
-            'as'   => 'menu.crud.insert',
+            'as' => 'menu.crud.insert',
             'uses' => 'QuickAdmin\QuickadminMenuController@insertCrud'
         ]);
 
         Route::get(config('quickadmin.route') . '/menu/parent', [
-            'as'   => 'menu.parent',
+            'as' => 'menu.parent',
             'uses' => 'QuickAdmin\QuickadminMenuController@createParent'
         ]);
         Route::post(config('quickadmin.route') . '/menu/parent', [
-            'as'   => 'menu.parent.insert',
+            'as' => 'menu.parent.insert',
             'uses' => 'QuickAdmin\QuickadminMenuController@insertParent'
         ]);
 
         Route::get(config('quickadmin.route') . '/menu/custom', [
-            'as'   => 'menu.custom',
+            'as' => 'menu.custom',
             'uses' => 'QuickAdmin\QuickadminMenuController@createCustom'
         ]);
         Route::post(config('quickadmin.route') . '/menu/custom', [
-            'as'   => 'menu.custom.insert',
+            'as' => 'menu.custom.insert',
             'uses' => 'QuickAdmin\QuickadminMenuController@insertCustom'
         ]);
 
         Route::get(config('quickadmin.route') . '/actions', [
-            'as'   => 'actions',
+            'as' => 'actions',
             'uses' => 'QuickAdmin\UserActionsController@index'
         ]);
         Route::get(config('quickadmin.route') . '/actions/ajax', [
-            'as'   => 'actions.ajax',
+            'as' => 'actions.ajax',
             'uses' => 'QuickAdmin\UserActionsController@table'
         ]);
     });

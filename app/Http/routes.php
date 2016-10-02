@@ -17,7 +17,7 @@ Route::group(
         'prefix' => '/api/v1',
         'namespace' => 'Api\V1',
         //'as' => 'api.',
-        //'middleware' => 'auth:api'
+        'middleware' => 'auth:api'
     ],
     function () {
         Route::resource('users', 'UsersController@index');
